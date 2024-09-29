@@ -1,0 +1,13 @@
+{
+    "name": "disaster-response-platform",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "start:backend": "cd backend && mvn spring-boot:run",
+        "start:frontend": "cd frontend && npm start",
+        "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\""
+    },
+    "devDependencies": {
+        "concurrently": "^6.5.1"
+    }
+}
